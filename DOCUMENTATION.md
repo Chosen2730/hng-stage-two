@@ -53,7 +53,7 @@
 > https://hng-backend-stage-two.vercel.app/api/
 > ```
 
-### Body (**raw**)
+### Example Body (**raw**)
 
 ```json
 {
@@ -86,8 +86,10 @@
 ### Method: GET
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
+> https://hng-backend-stage-two.vercel.app/api/{name}
 > ```
+
+- Supposing name is "Adepitan Ademola";
 
 ### Example Response (**raw**)
 
@@ -106,10 +108,12 @@
 ### Method: PATCH
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/Ruth Justice
+> https://hng-backend-stage-two.vercel.app/api/{name}
 > ```
 
-### Body (**raw**)
+- Supposing name is "Ruth Justice"
+
+### Example Body (**raw**)
 
 ```json
 {
@@ -137,8 +141,10 @@
 ### Method: DELETE
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
+> https://hng-backend-stage-two.vercel.app/api/{name}
 > ```
+
+- Supposing name is "Adepitan Ademola"
 
 ### Example Response (**raw**)
 
