@@ -8,6 +8,6 @@ const {
 } = require("../controllers/personController");
 
 router.route("/").post(createPerson).get(getAllPersons);
-router.route("/:name").get(getPerson).delete(deletePerson).patch(updatePerson);
+router.route("/:id").get(getPerson).delete(deletePerson).patch(updatePerson);
 
 module.exports = router;

@@ -13,9 +13,10 @@ const getAllPersons = async (req, res) => {
 };
 
 const getPerson = async (req, res) => {
-  const person = await Person.findOne({ name: req.params.name });
+  const { id } = req.params;
+  const person = await Person.findOne({ _id: id });
   if (!person) {
-    throw new NotFoundError("No person with this name in the database");
+    throw new NotFoundError(`No user with with ID ${id} in the database`);
   }
   res.status(StatusCodes.OK).json(person);
 };
@@ -39,33 +40,33 @@ const createPerson = async (req, res) => {
 };
 
 const deletePerson = async (req, res) => {
-  const { name } = req.params;
-  const person = await Person.findOneAndDelete({ name });
+  const { id } = req.params;
+  const person = await Person.findOneAndDelete({ _id: id });
   if (!person) {
-    throw new NotFoundError("No person with this name in the database");
+    throw new NotFoundError(`No user with with ID ${id} in the database`);
   }
   res
     .status(StatusCodes.OK)
-    .json({ msg: `${name} has been deleted successfully` });
+    .json({ msg: `User with ID ${id} has been deleted successfully` });
 };
 
 const updatePerson = async (req, res) => {
-  const { name } = req.params;
-  const newName = req.body.name;
+  const { id } = req.params;
+  const { name } = req.body;
   const person = await Person.findOneAndUpdate(
+    { _id: id },
     { name },
-    { name: newName },
     {
       runValidators: true,
       new: true,
     }
   );
   if (!person) {
-    throw new NotFoundError("No person with this name in the database");
+    throw new NotFoundError(`No person with ID ${id} in the database`);
   }
   res
     .status(StatusCodes.OK)
-    .json({ msg: `${name} has been Updated successfully`, person });
+    .json({ msg: `User with ID ${id} has been Updated successfully`, person });
 };
 
 module.exports = {
