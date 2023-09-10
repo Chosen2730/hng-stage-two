@@ -1,84 +1,71 @@
 # Project: HNG Internship
 
 ## End-point: Get All Persons
-### Method: GET
->```
->https://hng-backend-stage-two.vercel.app/api/
->```
-### Response: undefined
-```json
-undefined
-```
 
+### Method: GET
+
+> ```
+> https://hng-backend-stage-two.vercel.app/api/
+> ```
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Create Person
+
 ### Method: POST
->```
->https://hng-backend-stage-two.vercel.app/api/
->```
+
+> ```
+> https://hng-backend-stage-two.vercel.app/api/
+> ```
+
 ### Body (**raw**)
 
 ```json
 {
-    "name": "Simon Robinson"
+  "name": "Adepitan Ademola"
 }
 ```
-
-### Response: undefined
-```json
-undefined
-```
-
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Get Single Person
-### Method: GET
->```
->https://hng-backend-stage-two.vercel.app/api/Simon Robinson
->```
-### Response: undefined
-```json
-undefined
-```
 
+### Method: GET
+
+> ```
+> https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
+> ```
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Update Person
+
 ### Method: PATCH
->```
->https://hng-backend-stage-two.vercel.app/api/Simon Robinso
->```
+
+> ```
+> https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
+> ```
+
 ### Body (**raw**)
 
 ```json
 {
-    "name": "Simon Robinson"
+  "name": "Adepitan Demilade"
 }
 ```
-
-### Response: undefined
-```json
-undefined
-```
-
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ## End-point: Delete Person
-### Method: DELETE
->```
->https://hng-backend-stage-two.vercel.app/api/Simon Robinson
->```
-### Response: undefined
-```json
-undefined
-```
 
+### Method: DELETE
+
+> ```
+> https://hng-backend-stage-two.vercel.app/api/Adepitan Demilade
+> ```
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-_________________________________________________
+
+---
+
 Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
