@@ -86,10 +86,10 @@
 ### Method: GET
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/{name}
+> https://hng-backend-stage-two.vercel.app/api/{user_id}
 > ```
 
-- Supposing name is "Adepitan Ademola";
+- Supposing user_id is "64fe03bb3dc03d4b348fd49e";
 
 ### Example Response (**raw**)
 
@@ -108,10 +108,10 @@
 ### Method: PATCH
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/{name}
+> https://hng-backend-stage-two.vercel.app/api/{user_id}
 > ```
 
-- Supposing name is "Ruth Justice"
+- Supposing user_id is "64fe03bb3dc03d4b348fd49e";
 
 ### Example Body (**raw**)
 
@@ -125,7 +125,7 @@
 
 ```json
 {
-  "msg": "Ruth Justice has been Updated successfully",
+  "msg": "User with ID 64fe03bb3dc03d4b348fd49e has been Updated successfully",
   "person": {
     "_id": "64fe03bb3dc03d4b348fd49e",
     "name": "Ruth Justina",
@@ -141,16 +141,16 @@
 ### Method: DELETE
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/{name}
+> https://hng-backend-stage-two.vercel.app/api/{user_id}
 > ```
 
-- Supposing name is "Adepitan Ademola"
+- Supposing user_id is "64fe03bb3dc03d4b348fd49e";
 
 ### Example Response (**raw**)
 
 ```json
 {
-  "msg": "Adepitan Ademola has been deleted successfully"
+  "msg": "User with ID 64fe03bb3dc03d4b348fd49e has been deleted successfully"
 }
 ```
 
