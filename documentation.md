@@ -1,6 +1,6 @@
 # Project: HNG Internship Stage 2 Backend Task
 
-## [![Build Status](https://raw.githubusercontent.com/Chosen2730/hng-stage-two/main/UML/uml.png)](https://raw.githubusercontent.com/Chosen2730/hng-stage-two/main/UML/uml.png)
+## [![Build Status](https://raw.githubusercontent.com/Chosen2730/hng-stage-two/main/UML/uml.png)](https://raw.githubusercontent.com/Chosen2730/hng-stage-two/main/UML/uml.jpg)
 
 # A. Documentation
 
