@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/api", personRouter);
 app.get("/", (req, res) =>
   res.send(
-    `<h1> HNG Stage 2 Backend Task</h1> <h4>by Robinson_Simon </h4> <a href="https://github.com/Chosen2730/hng-stage-two/blob/main/documentation.md">Check Documentation</a> `
+    `<h1> HNG Stage 2 Backend Task</h1> <h4>by Robinson_Simon </h4> <a href="https://github.com/Chosen2730/hng-stage-two/blob/main/DOCUMENTATION.md">Check Documentation</a> `
   )
 );
 
