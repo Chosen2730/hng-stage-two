@@ -18,7 +18,15 @@
           "path": [""]
         }
       },
-      "response": []
+      "response": [
+        {
+          "_id": "64fdf1ddd5e2d3007434f206",
+          "name": "Simon Robinson",
+          "createdAt": "2023-09-10T16:42:05.418Z",
+          "updatedAt": "2023-09-10T16:46:40.049Z",
+          "__v": 0
+        }
+      ]
     },
     {
       "name": "Create Person",
@@ -40,7 +48,13 @@
           "path": [""]
         }
       },
-      "response": []
+      "response": [
+        {
+          "name": "Simon Robinson",
+          "_id": "64fdfe6e24e646d185d23fe6",
+          "__v": 0
+        }
+      ]
     },
     {
       "name": "Get Single Person",
@@ -53,7 +67,13 @@
           "path": ["Simon Robinson"]
         }
       },
-      "response": []
+      "response": [
+        {
+          "_id": "64fdfe6e24e646d185d23fe6",
+          "name": "Simon Robinson",
+          "__v": 0
+        }
+      ]
     },
     {
       "name": "Update Person",
@@ -75,7 +95,16 @@
           "path": ["Simon Robinso"]
         }
       },
-      "response": []
+      "response": [
+        {
+          "msg": "Simon Robinson has been Updated successfully",
+          "person": {
+            "_id": "64fdfe6e24e646d185d23fe6",
+            "name": "Simon Robinson",
+            "__v": 0
+          }
+        }
+      ]
     },
     {
       "name": "Delete Person",
@@ -88,7 +117,11 @@
           "path": ["Simon Robinson"]
         }
       },
-      "response": []
+      "response": [
+        {
+          "msg": "Simon Robinson has been deleted successfully"
+        }
+      ]
     }
   ],
   "variable": [
