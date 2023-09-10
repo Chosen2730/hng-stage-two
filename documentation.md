@@ -166,9 +166,15 @@ In your prefered directory on your machine run this command
   git clone https://github.com/Chosen2730/hng-stage-two.git
 ```
 
+Then change directory into the file.
+
+```
+ cd hng-stage-two
+```
+
 ### Step 2: Install the dependencies
 
-The clone repository contains package.json file. Run the following comman to install the packages
+The clone repository contains package.json file. Run the following command to install the packages
 
 ```
   npm install
