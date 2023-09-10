@@ -1,6 +1,16 @@
-# Project: HNG Internship
+# Project: HNG Internship Stage 2 Backend Task
 
-## End-point: Get All Persons
+---
+
+# A. Documentation
+
+---
+
+## 1. Get All Persons
+
+#### Description
+
+- This endpoint gets all persons in the database.
 
 ### Method: GET
 
@@ -8,25 +18,7 @@
 > https://hng-backend-stage-two.vercel.app/api/
 > ```
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: Create Person
-
-### Method: POST
-
-> ```
-> https://hng-backend-stage-two.vercel.app/api/
-> ```
-
-### Body (**raw**)
-
-```json
-{
-  "name": "Adepitan Ademola"
-}
-```
-
-### Response (**raw**)
+### Example Response (**raw**)
 
 ```json
 [
@@ -45,7 +37,51 @@
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Get Single Person
+## 2.Create Person
+
+#### Description
+
+- This endpoint create a new person and save to the database
+- Example below shows that a person name "Adepitan Ademola" has been created and added to the database
+- Inputs must be passed through the request body.
+- Only name of type string is allowed in the body.
+- Name must be unique, if a duplicate name is entered, the request will spit error
+
+### Method: POST
+
+> ```
+> https://hng-backend-stage-two.vercel.app/api/
+> ```
+
+### Body (**raw**)
+
+```json
+{
+  "name": "Adepitan Ademola"
+}
+```
+
+### Example Response (**raw**)
+
+```json
+{
+  "name": "Adepitan Ademola",
+  "_id": "64fe0cf53795160772b6e6a1",
+  "__v": 0
+}
+```
+
+### Example Duplicate Error Response (**raw**)
+
+```json
+{
+  "msg": "This name already exist, enter a new unique name"
+}
+```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## 3. Get Single Person
 
 ### Method: GET
 
@@ -53,11 +89,11 @@
 > https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
 > ```
 
-### Response (**raw**)
+### Example Response (**raw**)
 
 ```json
 {
-  "_id": "64fe03e13dc03d4b348fd4a2",
+  "_id": "64fe0a0928e2ada1b9c5f800",
   "name": "Adepitan Ademola",
   "__v": 0
 }
@@ -65,30 +101,30 @@
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Update Person
+## 4. Update Person
 
 ### Method: PATCH
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
+> https://hng-backend-stage-two.vercel.app/api/Ruth Justice
 > ```
 
 ### Body (**raw**)
 
 ```json
 {
-  "name": "Adepitan Demilade"
+  "name": "Ruth Justina"
 }
 ```
 
-### Response (**raw**)
+### Example Response (**raw**)
 
 ```json
 {
-  "msg": "Adepitan Ademola has been Updated successfully",
+  "msg": "Ruth Justice has been Updated successfully",
   "person": {
-    "_id": "64fe03e13dc03d4b348fd4a2",
-    "name": "Adepitan Demilade",
+    "_id": "64fe03bb3dc03d4b348fd49e",
+    "name": "Ruth Justina",
     "__v": 0
   }
 }
@@ -96,24 +132,60 @@
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Delete Person
+## 5. Delete Person
 
 ### Method: DELETE
 
 > ```
-> https://hng-backend-stage-two.vercel.app/api/Adepitan Demilade
+> https://hng-backend-stage-two.vercel.app/api/Adepitan Ademola
 > ```
 
-### Response (**raw**)
+### Example Response (**raw**)
 
 ```json
 {
-  "msg": "Adepitan Demilade has been deleted successfully"
+  "msg": "Adepitan Ademola has been deleted successfully"
 }
 ```
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+---
+
+# B. Installation
 
 ---
 
-Powered By: [postman-to-markdown](https://github.com/bautistaj/postman-to-markdown/)
+To use this repository in your local machine. You must have installed [Node.js](https://nodejs.org/) and also have [Git](https://git-scm.com/) configured on your machine.
+
+Follow the steps below.
+
+### Step 1: Clone the repository
+
+In your prefered directory on your machine run this command
+
+```
+  git clone https://github.com/Chosen2730/hng-stage-two.git
+```
+
+### Step 2: Install the dependencies
+
+The clone repository contains package.json file. Run the following comman to install the packages
+
+```
+  npm install
+```
+
+### Step 3: Create an environment variable
+
+Create a .env file, and paste the code below, replace <your-mongo-url-connection-string> with your mongoDB collection connection string. This means you must have created a collection on MongoDB atlas already.
+
+```
+  MONGO_URI=<your-mongo-url-connection-string>
+```
+
+### Step 4: Run your app
+
+Run the app on your machine by running the command below
+
+```
+ npm start
+```

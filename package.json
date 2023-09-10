@@ -6,10 +6,6 @@
   "scripts": {
     "start": "nodemon start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Chosen2730/hng-stage-two.git"
-  },
   "author": "",
   "license": "ISC",
   "bugs": {
